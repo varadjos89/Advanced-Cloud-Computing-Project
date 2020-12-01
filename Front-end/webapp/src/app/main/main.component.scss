@@ -1,0 +1,25 @@
+.floated {
+    width: 48%;
+  }
+  
+  .floated {
+    float: left;
+    padding: 1%;
+  }
+  
+  .first {
+    text-align: right;
+  }
+  
+  .button {
+        margin-top: 15px;
+        background-color: #0066FF;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+   }

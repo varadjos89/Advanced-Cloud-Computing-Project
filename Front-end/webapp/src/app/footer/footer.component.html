@@ -1,0 +1,34 @@
+<footer>
+  <div class="container-fluid ecom-footer">
+      
+    <div class="container ecom-no-padding">
+      <div class="row ecom-no-padding">
+        
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+          <app-comments [parentWidgetId]="footerSocialId"></app-comments>
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+
+          <app-social [parentId]="footerSocialId"></app-social>
+            
+          <div class="ecom-footer-nav">
+            <h6 class="ecom-footer-nav-title">Nos pages :</h6>
+            <a class="ecom-footer-nav-item" routerLink="/home">Home 1</a>
+            <a class="ecom-footer-nav-item" routerLink="/shop">Notre catalogue</a>
+            <a class="ecom-footer-nav-item" routerLink="/about">Qui sommes-nous ?</a>
+            <a class="ecom-footer-nav-item" class="ecom-footer-nav-item" routerLink="/blog">Notre blog</a>
+            <a class="ecom-footer-nav-item" routerLink="/contact">Contact</a>
+            <a class="ecom-footer-nav-item" routerLink="/profil">Profile</a>
+          </div>
+        </div>
+        
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 ecom-footer-responsive"> 
+          <app-newsletter></app-newsletter>
+          <app-infos></app-infos>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>

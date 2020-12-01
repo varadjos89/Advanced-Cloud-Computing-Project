@@ -1,0 +1,17 @@
+@import "../variables";
+.ecom-contact-container{
+    margin-top:50px;
+    min-height:80vh;
+    font-family: $main-font;
+    h4{color:$txt-sec-color!important;}
+    .ecom-contact-form-wrapper{
+        margin-left:0px;
+        margin-right:0px;
+    }
+    .ecom-contact-team-row{
+        margin-top:45px;
+        .ecom-about-contact-container{
+            margin-bottom:15px;
+        }
+    }
+}

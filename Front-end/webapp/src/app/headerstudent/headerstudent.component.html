@@ -1,0 +1,57 @@
+<div class="container-fluid" style="background-color:#e40046;">
+  <div class="container ecom-header-row">
+
+    <!-- .ecom-nav-col -->
+    <div class="col-lg-12 ecom-nav-col">
+    
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div (click)="mobileNavToggle();" class="ecom-mobile-icon">
+          <span>
+            <i class="material-icons">
+              view_headline
+            </i>
+          </span>
+          <span>
+            Menu
+          </span>
+        </div>
+        <a class="navbar-brand" routerLink="/homestudent" ><strong>Library Management System</strong></a>
+        <ul class="navbar-nav mr-auto" style="float:right!important;">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/homestudent" routerLinkActive="active">
+                <i class="material-icons">home</i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ecom-custom-nav-link" routerLink="/shopstudent">View Items</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link ecom-custom-nav-link" routerLink="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ecom-custom-nav-link" routerLink="/blog">Blog</a>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link ecom-custom-nav-link" routerLink="/contact">Borrowed books</a>
+          </li> -->
+        </ul>
+        
+        <!-- <div class="ecom-home-cart-wrapper" (click)="cartToggle();">
+          <span>Cart</span>
+          <i class="material-icons">shopping_cart</i>
+          <div class="ecom-cart-items-nb">{{catLength}}</div>
+        </div> -->
+        <div class="ecom-home-cart-wrapper d-none d-none d-lg-block" routerLink="/profile">
+          <span>Student</span>
+          <i class="material-icons ecom-header-profil">person</i>
+        </div>
+      </nav>
+
+    </div>
+    <!-- /.ecom-nav-col -->
+  
+    <app-mobile-nav [ngClass]="mobileNavVis ? 'ecom-show-cart' : 'ecom-hide-cart'"></app-mobile-nav>
+  
+    <app-cart [ngClass]="isVisible ? 'ecom-show-cart' : 'ecom-hide-cart'" (valueChange)='cartStatus($event)'></app-cart>
+  </div>
+</div>  

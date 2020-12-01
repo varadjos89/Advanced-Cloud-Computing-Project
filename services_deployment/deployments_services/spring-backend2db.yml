@@ -1,0 +1,43 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend2db
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 8081
+    protocol: TCP
+    targetPort: 8081
+  selector:
+    app: backend2db
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springdeploy
+spec:
+  selector:
+    matchLabels:
+      app: backend2db
+  replicas: 1
+  minReadySeconds: 15
+  strategy:
+    type: RollingUpdate
+    rollingUpdate: 
+      maxUnavailable: 1
+      maxSurge: 1 
+  template:
+    metadata:
+      labels:
+        app: backend2db
+    spec:
+      containers:
+      - image: varadjoshi89/backend2db:latest
+        imagePullPolicy: Always
+        name: backend2db
+        ports:
+          - containerPort: 8081
+
+

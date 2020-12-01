@@ -1,0 +1,14 @@
+@import "../../variables";
+.ecom-comments-container{
+    margin-top:15px;
+    font-family: $main-font;
+    h6{
+        font-size:1.2em!important;
+        //color : $txt-first-color
+    }
+    .ecom-comment-user-infos{
+        span{text-transform: capitalize;}
+        q{display:block;}
+        q,span{font-size:.8em;}
+    }
+}
