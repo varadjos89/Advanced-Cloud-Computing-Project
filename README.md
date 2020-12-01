@@ -1,14 +1,8 @@
-# FindYourVibe-deployment
-Deployment scripts to recreate a microservices application to recommend playlist to users based on ratings provided to [Billboard's Top100 weekly](https://www.billboard.com/charts/hot-100) scrapped using [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) and recommendaion provided using [Apache Mahout](https://mahout.apache.org/) clustering.
+# Library Management System
 
-It could also suggest playlist to users based on their mood using Sentiment Analysis from [TextBlob polarity](https://textblob.readthedocs.io/en/dev/quickstart.html)
-
-Other features include email on user registration using [SMTP](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol) and Bug reporting in [Slack Incoming Webhooks](https://api.slack.com/messaging/webhooks)
 
 ## Scope ##
 The deployment scripts would create 2 worker nodes within [AWS EKS](https://aws.amazon.com/eks/) cluster automated using [Terraform](https://www.terraform.io/docs/providers/aws/index.html) scripts.
-All routing is managed internally by Service Names, so no IP's needs to be edited(exception Admin app, see further details)
-We have Spring Boot(Load Balancer), Python(Node Port), MySQL(Load Balancer), MongoDB(Load Balancer) backend containers and React, .NETCore front end containers.
 
 ## Dependancies
 
@@ -40,33 +34,13 @@ This will create Load balancers for all apps required by external User
 ```
 kubectl apply -f mysql-deployment.yaml
 kubectl apply -f mysql-pv.yaml
-kubectl apply -f mongo.yml
-kubectl apply -f billboard.yml
-kubectl apply -f sentiment.yml
-kubectl apply -f spring-boot.yml
-kubectl apply -f react-app.yml
+kubectl apply -f mysql-deployment.yaml
+kubectl apply -f mysql-pv.yaml
+kubectl apply -f spring-backend2db.yml
+kubectl apply -f spring-backend.yml
+kubectl apply -f angular-app.yml
 kubectl get deployments
 kubectl get svc 
-```
-
-## Intermediate set up for Admin
-Once the springboot external IP is generated, we need to follow the below steps
-
-An improtant part of the project is to hit the 'springboot' external API with /initPlaylist [POST] for initial playlists to load
-
-Step into local Admin app, and follow the below steps to edit JS file with springboot API and Build/Containerize app
-This is the only manual step where our JavaScript file could not resolve service names
-```bash
-delete out and publish folders
-cd D:\<>\dotnetAdmin\adminApp\wwwroot\js
-EDIT the file, with spring-boot IP as generated check 'kubectl get svc'
-dotnet build
-dotnet publish -o out
-cd ..
-docker build -t <dockername/repo> .
-docker push <dockername/repo>
-cd into deployments_services run:
-kubectl apply -f dotnet-app.yml 
 ```
 
 ## Final set up for Grapfana and Promethues
