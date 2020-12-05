@@ -92,6 +92,39 @@ kubectl get pv
 kubectl get persistentvolumeclaim 
 ```
 
+## Accessing the Kubernetes DashBoard
+
+```
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.4/aio/deploy/recommended.yaml
+kubectl proxy
+
+//Visit this url
+http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+
+```
+![Screenshot from 2020-12-01 01-22-56](https://user-images.githubusercontent.com/48415852/101262927-f33f9680-370f-11eb-85d6-3d88411f62eb.png)
+![Screenshot from 2020-12-01 01-23-21](https://user-images.githubusercontent.com/48415852/101262929-f5095a00-370f-11eb-83b2-4c8ebeb962a8.png)
+![Screenshot from 2020-12-01 01-25-37](https://user-images.githubusercontent.com/48415852/101262932-f89ce100-370f-11eb-98de-94d5ca5bf379.png)
+
+
+
+## Steps to get the token
+
+
+```
+kubectl apply -f https://gist.githubusercontent.com/chukaofili/9e94d966e73566eba5abdca7ccb067e6/raw/0f17cd37d2932fb4c3a2e7f4434d08bc64432090/k8s-dashboard-admin-user.yaml
+
+kubectl get sa admin-user -n kube-system
+
+kubectl describe sa admin-user -n kube-system
+
+kubectl describe secret admin-user-token-tr6tr -n kube-system
+
+kubectl proxy
+```
+![Screenshot from 2020-12-01 01-26-13](https://user-images.githubusercontent.com/48415852/101262935-f9ce0e00-370f-11eb-9a3c-122ff2a092a1.png)
+
+
 ## Reclaiming resources
 Once you are done, run the below commands in no particular order, except terraform destroy to be last
 ```
@@ -120,13 +153,6 @@ terraform destroy
 ## Screenshots
 
 
-![Screenshot from 2020-12-01 01-22-56](https://user-images.githubusercontent.com/48415852/101262927-f33f9680-370f-11eb-85d6-3d88411f62eb.png)
-
-![Screenshot from 2020-12-01 01-23-21](https://user-images.githubusercontent.com/48415852/101262929-f5095a00-370f-11eb-83b2-4c8ebeb962a8.png)
-
-![Screenshot from 2020-12-01 01-25-37](https://user-images.githubusercontent.com/48415852/101262932-f89ce100-370f-11eb-98de-94d5ca5bf379.png)
-
-![Screenshot from 2020-12-01 01-26-13](https://user-images.githubusercontent.com/48415852/101262935-f9ce0e00-370f-11eb-9a3c-122ff2a092a1.png)
 
 ![Screenshot from 2020-12-01 01-26-19](https://user-images.githubusercontent.com/48415852/101262937-fb97d180-370f-11eb-901d-496673fad2a1.png)
 
