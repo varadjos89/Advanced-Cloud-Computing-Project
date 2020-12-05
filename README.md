@@ -102,3 +102,9 @@ kubectl delete svc grafana -n monitoring
 kubectl delete svc prometheus-service -n monitoring
 terraform destroy
 ```
+
+## Screenshots
+![Screenshot from 2020-12-01 01-14-10](https://user-images.githubusercontent.com/48415852/101262861-8c21e200-370f-11eb-991a-3f02422ba0a1.png)
+
+![Screenshot from 2020-12-01 01-14-17](https://user-images.githubusercontent.com/48415852/101262865-90e69600-370f-11eb-9af5-be803458b73a.png)
+
