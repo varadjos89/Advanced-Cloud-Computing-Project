@@ -151,23 +151,17 @@ kubectl proxy
 ## Reclaiming resources
 Once you are done, run the below commands in no particular order, except terraform destroy to be last
 ```
-kubectl delete deployment mysqldeploy
-kubectl delete deployment mongodeploy
-kubectl delete deployment springdeploy
-kubectl delete deployment billboarddeploy
-kubectl delete deployment sentimentdeploy
-kubectl delete deployment reactdeploy
-kubectl delete deployment aspdeploy
+kubectl delete deployment standalone
+kubectl delete deployment backend2db
+kubectl delete deployment backend
+kubectl delete deployment frontend
 kubectl delete deployment grafana -n monitoring
 kubectl delete deployment prometheus-deployment -n monitoring
 
-kubectl delete svc mysqldevops
-kubectl delete svc mongodevops
-kubectl delete svc springdevops
-kubectl delete svc billboarddevops
-kubectl delete svc sentimentdevops
-kubectl delete svc reactdevops
-kubectl delete svc aspdevops
+kubectl delete svc standalone
+kubectl delete svc backend2db
+kubectl delete svc backend
+kubectl delete svc frontend
 kubectl delete svc grafana -n monitoring
 kubectl delete svc prometheus-service -n monitoring
 terraform destroy
