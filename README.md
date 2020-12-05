@@ -52,6 +52,9 @@ kubectl apply -f angular-app.yml
 kubectl get deployments
 kubectl get svc 
 ```
+![Screenshot from 2020-12-01 01-17-38](https://user-images.githubusercontent.com/48415852/101262920-ec188880-370f-11eb-8f90-8e9e36156893.png)
+
+![Screenshot from 2020-12-01 01-17-43](https://user-images.githubusercontent.com/48415852/101262922-ede24c00-370f-11eb-8a8d-b70dbcdc225c.png)
 
 ## Final set up for Grapfana and Promethues
 Step into monitoring
@@ -71,6 +74,7 @@ kubectl get deployments -n monitoring
 kubectl get svc -n monitoring
 kubectl get svc -n monitoring
 ```
+![Screenshot from 2020-12-01 01-19-28](https://user-images.githubusercontent.com/48415852/101262924-efac0f80-370f-11eb-96fb-853252e114a6.png)
 
 ## Accessing the IP's
 
@@ -115,13 +119,6 @@ terraform destroy
 
 ## Screenshots
 
-
-
-![Screenshot from 2020-12-01 01-17-38](https://user-images.githubusercontent.com/48415852/101262920-ec188880-370f-11eb-8f90-8e9e36156893.png)
-
-![Screenshot from 2020-12-01 01-17-43](https://user-images.githubusercontent.com/48415852/101262922-ede24c00-370f-11eb-8a8d-b70dbcdc225c.png)
-
-![Screenshot from 2020-12-01 01-19-28](https://user-images.githubusercontent.com/48415852/101262924-efac0f80-370f-11eb-96fb-853252e114a6.png)
 
 ![Screenshot from 2020-12-01 01-22-56](https://user-images.githubusercontent.com/48415852/101262927-f33f9680-370f-11eb-85d6-3d88411f62eb.png)
 
