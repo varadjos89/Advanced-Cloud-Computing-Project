@@ -108,3 +108,108 @@ terraform destroy
 
 ![Screenshot from 2020-12-01 01-14-17](https://user-images.githubusercontent.com/48415852/101262865-90e69600-370f-11eb-9af5-be803458b73a.png)
 
+![Screenshot from 2020-12-01 01-14-45](https://user-images.githubusercontent.com/48415852/101262913-e58a1100-370f-11eb-9229-3fb8d679700b.png)
+
+![Screenshot from 2020-12-01 01-15-27](https://user-images.githubusercontent.com/48415852/101262916-ea4ec500-370f-11eb-93d3-c20681189d04.png)
+
+![Screenshot from 2020-12-01 01-17-38](https://user-images.githubusercontent.com/48415852/101262920-ec188880-370f-11eb-8f90-8e9e36156893.png)
+
+![Screenshot from 2020-12-01 01-17-43](https://user-images.githubusercontent.com/48415852/101262922-ede24c00-370f-11eb-8a8d-b70dbcdc225c.png)
+
+![Screenshot from 2020-12-01 01-19-28](https://user-images.githubusercontent.com/48415852/101262924-efac0f80-370f-11eb-96fb-853252e114a6.png)
+
+![Screenshot from 2020-12-01 01-22-56](https://user-images.githubusercontent.com/48415852/101262927-f33f9680-370f-11eb-85d6-3d88411f62eb.png)
+
+![Screenshot from 2020-12-01 01-23-21](https://user-images.githubusercontent.com/48415852/101262929-f5095a00-370f-11eb-83b2-4c8ebeb962a8.png)
+
+![Screenshot from 2020-12-01 01-25-37](https://user-images.githubusercontent.com/48415852/101262932-f89ce100-370f-11eb-98de-94d5ca5bf379.png)
+
+![Screenshot from 2020-12-01 01-26-13](https://user-images.githubusercontent.com/48415852/101262935-f9ce0e00-370f-11eb-9a3c-122ff2a092a1.png)
+
+![Screenshot from 2020-12-01 01-26-19](https://user-images.githubusercontent.com/48415852/101262937-fb97d180-370f-11eb-901d-496673fad2a1.png)
+
+![Screenshot from 2020-12-01 01-26-26](https://user-images.githubusercontent.com/48415852/101262939-fd619500-370f-11eb-9dad-5fe11fb94f58.png)
+
+![Screenshot from 2020-12-01 01-26-33](https://user-images.githubusercontent.com/48415852/101262941-ffc3ef00-370f-11eb-910e-22304e387684.png)
+
+![Screenshot from 2020-12-01 01-26-36](https://user-images.githubusercontent.com/48415852/101262943-00f51c00-3710-11eb-90af-890a9ba61d73.png)
+
+![Screenshot from 2020-12-01 01-26-41](https://user-images.githubusercontent.com/48415852/101262944-02bedf80-3710-11eb-9be7-38aed36a9e3c.png)
+
+![Screenshot from 2020-12-01 01-26-45](https://user-images.githubusercontent.com/48415852/101262948-05213980-3710-11eb-98b1-3b56783bab26.png)
+
+![Screenshot from 2020-12-01 01-26-52](https://user-images.githubusercontent.com/48415852/101262954-06526680-3710-11eb-9fcc-36fdcadb444c.png)
+
+![Screenshot from 2020-12-01 01-26-55](https://user-images.githubusercontent.com/48415852/101262958-07839380-3710-11eb-9f34-8c83e3a1a600.png)
+
+![Screenshot from 2020-12-01 01-26-59](https://user-images.githubusercontent.com/48415852/101262962-094d5700-3710-11eb-9819-09165ee13017.png)
+
+![Screenshot from 2020-12-01 01-27-13](https://user-images.githubusercontent.com/48415852/101262963-0bafb100-3710-11eb-8c79-a8dedd117212.png)
+
+![Screenshot from 2020-12-01 01-27-17](https://user-images.githubusercontent.com/48415852/101262967-0ce0de00-3710-11eb-8e44-a4fca3bf2c2e.png)
+
+![Screenshot from 2020-12-01 01-27-20](https://user-images.githubusercontent.com/48415852/101262969-0eaaa180-3710-11eb-9cfd-a4197281db86.png)
+
+![Screenshot from 2020-12-01 01-27-23](https://user-images.githubusercontent.com/48415852/101262970-0fdbce80-3710-11eb-9f44-c0ca3043a542.png)
+
+![Screenshot from 2020-12-01 01-28-06](https://user-images.githubusercontent.com/48415852/101262973-12d6bf00-3710-11eb-89bd-fc797b649f49.png)
+
+![Screenshot from 2020-12-01 01-28-13](https://user-images.githubusercontent.com/48415852/101262975-14a08280-3710-11eb-8d50-a3e752daf0e1.png)
+
+![Screenshot from 2020-12-01 01-29-09](https://user-images.githubusercontent.com/48415852/101262978-15d1af80-3710-11eb-9f06-41768c0c3a0b.png)
+
+![Screenshot from 2020-12-01 01-29-22](https://user-images.githubusercontent.com/48415852/101262981-179b7300-3710-11eb-96be-43cf01301e97.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
