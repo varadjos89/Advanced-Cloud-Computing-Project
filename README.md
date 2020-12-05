@@ -1,8 +1,10 @@
 # Library Management System
-
+A library management system, is a microservice-based web application that allows the communication between librarian and students. The librarian can add new books to the library, update book related information, remove outdated books and handle student requests. On the other hand, students can view the avaialable books, borrow these book and return them back. The webapp is developed using total 4 microservices where Angular handles frontend operations, one Spring Boot backend handles database related operations, the other ones handles core business logic and lastly mysql to manage user related data.
 
 ## Scope ##
-The deployment scripts would create 2 worker nodes within [AWS EKS](https://aws.amazon.com/eks/) cluster automated using [Terraform](https://www.terraform.io/docs/providers/aws/index.html) scripts.
+The deployment scripts would create 2 worker nodes within [AWS EKS](https://aws.amazon.com/eks/) cluster automated using [Terraform](https://www.terraform.io/docs/providers/aws/index.html) scripts. All routing is managed internally by Service Names, so no IP's needs to be edited. We have two Spring Boot(Load Balancers), MySQL(Load Balancer) backend containers and Angular(Load Balancer) frontend container.
+
+Dependancies
 
 ## Dependancies
 
@@ -159,57 +161,4 @@ terraform destroy
 ![Screenshot from 2020-12-01 01-29-09](https://user-images.githubusercontent.com/48415852/101262978-15d1af80-3710-11eb-9f06-41768c0c3a0b.png)
 
 ![Screenshot from 2020-12-01 01-29-22](https://user-images.githubusercontent.com/48415852/101262981-179b7300-3710-11eb-96be-43cf01301e97.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
