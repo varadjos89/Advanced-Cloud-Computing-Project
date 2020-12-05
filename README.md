@@ -18,15 +18,23 @@ terraform init
 terraform plan
 terraform apply
 ```
+
+![Screenshot from 2020-12-01 01-14-10](https://user-images.githubusercontent.com/48415852/101262861-8c21e200-370f-11eb-991a-3f02422ba0a1.png)
+
+![Screenshot from 2020-12-01 01-14-17](https://user-images.githubusercontent.com/48415852/101262865-90e69600-370f-11eb-9af5-be803458b73a.png)
+
 This will give an output for config file and config-map-aws-auth
 
 Replace local C://<>/.kube/config file with this config
+
+![Screenshot from 2020-12-01 01-14-45](https://user-images.githubusercontent.com/48415852/101262913-e58a1100-370f-11eb-9229-3fb8d679700b.png)
 
 Copy the config-map-aws-auth into a YAML file and run the following command
 
 ``` bash
 kubectl apply -f config-map-aws-auth.yaml 
 ```
+![Screenshot from 2020-12-01 01-15-27](https://user-images.githubusercontent.com/48415852/101262916-ea4ec500-370f-11eb-93d3-c20681189d04.png)
 
 ## Running the User story setup within EKS Cluster
 Step into the deployments_services folder
@@ -106,13 +114,8 @@ terraform destroy
 ```
 
 ## Screenshots
-![Screenshot from 2020-12-01 01-14-10](https://user-images.githubusercontent.com/48415852/101262861-8c21e200-370f-11eb-991a-3f02422ba0a1.png)
 
-![Screenshot from 2020-12-01 01-14-17](https://user-images.githubusercontent.com/48415852/101262865-90e69600-370f-11eb-9af5-be803458b73a.png)
 
-![Screenshot from 2020-12-01 01-14-45](https://user-images.githubusercontent.com/48415852/101262913-e58a1100-370f-11eb-9229-3fb8d679700b.png)
-
-![Screenshot from 2020-12-01 01-15-27](https://user-images.githubusercontent.com/48415852/101262916-ea4ec500-370f-11eb-93d3-c20681189d04.png)
 
 ![Screenshot from 2020-12-01 01-17-38](https://user-images.githubusercontent.com/48415852/101262920-ec188880-370f-11eb-8f90-8e9e36156893.png)
 
